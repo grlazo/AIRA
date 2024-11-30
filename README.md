@@ -54,7 +54,7 @@ suggested were encountered when walking someone through this process for a
 Windows machine (not sure about Apple).
 
 Now you're ready to create the vector store for your collection of PDF documents.
-Place your PDF files in a directory called '***data***'. Start with one, or a few (three samples are included), to 
+Place your PDF files in a directory called '***data***'. Start with one, or a few, to 
 start until you're comfortable with the limitations on your machine settings. 
 There can be a hard-limit overflow which will fail populating the vector store.
 
