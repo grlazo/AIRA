@@ -1,7 +1,9 @@
 import argparse
 from langchain_chroma import Chroma
+#from langchain_community.vectorstores import Chroma
 from langchain.prompts import ChatPromptTemplate
 from langchain_ollama import OllamaLLM
+#from langchain_community.llms.ollama import Ollama
 
 from get_embedding_function import get_embedding_function
 
@@ -17,6 +19,7 @@ Answer the question based only on the following context:
 Answer the question based on the above context: {question}
 """
 
+
 def main():
     # Create CLI.
     parser = argparse.ArgumentParser()
@@ -24,6 +27,7 @@ def main():
     args = parser.parse_args()
     query_text = args.query_text
     query_rag(query_text)
+
 
 def query_rag(query_text: str):
     # Prepare the DB.
@@ -46,5 +50,7 @@ def query_rag(query_text: str):
     print(formatted_response)
     return response_text
 
+
 if __name__ == "__main__":
     main()
+
